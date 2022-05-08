@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <title>Dutaf</title>
+</head>
+<body>
+    <h1>Bienvenu sur Dutaf shop</h1>
+    <h2>Attention ici vous etes dans la partie admin  </h2>
+
+    <nav>
+        <a href="bd_gestion.php">retour vers la gestion des Albums</a><br>
+        <a href="admin.html">retour a  l'accueil de l'administration du site </a><br>
+    </nav>
+    <h2>Ajouter un nouvel album ...</h2>
+
+
+    <form action="bd_new_valide.php" method="get">
+        titre<input type="text" name="titre"><br>
+        prix<input type="text" name="prix"><br>
+        ISBN<input type="text" name="isbn"><br>
+        Serie<input type="text" name="serie"><br>
+        Editeur:
+        <select name="editeur">
+                    <?php 
+            $bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;charset=utf8', 'mmi19x04', 'rochdi2002D@');
+            $req1='SELECT * FROM editeurs';
+            $resultat1 = $bdd->query($req1);
+
+            while( $un_editeur = $resultat1->fetch() ) {
+            echo '<option value="'.$un_editeur['editeur_id'].'">'.$un_editeur['editeur_nom'].'</option>';
+            }
+            ?>
+
+        </select><br>
+
+        Auteur:
+        <select name="auteur">
+            <?php 
+            $bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;charset=utf8', 'mmi19x04', 'rochdi2002D@');
+            $req2='SELECT * FROM auteurs';
+            $resultat2 = $bdd->query($req2);
+
+            while( $un_editeur = $resultat2->fetch() ) {
+            echo '<option value="'.$un_editeur['auteur_id'].'">'.$un_editeur['auteur_nom'].'</option>';
+            }
+            ?>
+        </select> <br>
+        <input type="submit" name="Ajouter">
+
+
+    </form>
+</body>
+</html>

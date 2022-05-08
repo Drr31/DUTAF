@@ -1,0 +1,62 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 227, 247);
+}
+#menu
+{
+    display: inline-block;
+}
+
+nav
+{
+    background-color: rgb(65, 96, 161);
+    color: white;
+}
+ul
+{
+    display: inline-block;
+    list-style: none;
+    
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+h2.index
+{ display: inline-block;
+width: 800px;}
+#right
+{   display: inline-block;
+
+}
+
+h1.index
+{
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: underline;
+    font-size: 50px;
+    margin-top: 200px;
+    color: rgb(65, 96, 161);
+}
+#recherche
+{   font-size: 20px;
+    text-align: center;
+    margin-top: 200px;
+}
+button.gestion
+{   width: 200px;
+    background-color:rgb(65, 96, 161) ;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
