@@ -40,8 +40,8 @@
 
     <tbody>
     <?php
-$bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;
-charset=utf8', 'mmi19x04', 'rochdi2002D@');
+$bdd = new PDO('mysql:host=localhost;dbname=####;
+charset=utf8', '#######', '#######');
 
 $requete = 'SELECT album_id,album_titre,album_prix,auteur_nom 
 FROM albums 
