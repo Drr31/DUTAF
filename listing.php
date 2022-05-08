@@ -5,27 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dutaf</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" >
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-    
-<!-- <a href="admin/bd_new_form.php">Ajouter Un album</a><br> -->
-<nav>
-        <ul>
-         <h2 class="index">Dutaf Shop</h2>   
-         <div id="right">
-        <i class='fas fa-home' style='font-size:20px;color:white'></i>
-        <li><a href="index.html">Home</a></li>
-        <i class='fas fa-book-open' style='font-size:20px;color:white'></i>
-        <li><a href="listing.php">Voir le catalogue </a> <br></li>
-        <i class='fas fa-search' style='font-size:20px;color:white'></i>
-        <li><a href="form_recherche.php">Faire un recherche</a> <br></li>
-        <i class='fas fa-user' style='font-size:20px;color:white'></i>
-        <li><a href="admin/admin.html">Adminstration</a> <br></li>
-        </ul>
-    </div>
+    <h1>Bienvenu sur Dutaf shop</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="listing.php">Voir le catalogue </a> <br>
+        <a href="form_recherche.php">Faire un recherche</a> <br>
+        <a href="admin/admin.html">adminstration</a><br>
     </nav>
     <h2>Voici nos Albums ...</h2>
 
