@@ -31,7 +31,7 @@
             <h2>Vous venez d'Ajouter un auteur</h2>
             <hr>
             <?php
-            $bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;charset=utf8', 'mmi19x04', 'rochdi2002D@');
+            $bdd = new PDO('mysql:host=localhost;dbname=NAME;charset=utf8', 'NAME', 'PASSWORD');
             $nom=$_GET['nom'];
             $prenom=$_GET['prenom'];
             $nationalite=$_GET['nationalite'];

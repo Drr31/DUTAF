@@ -31,7 +31,7 @@
 
     $num_bd = $_GET['num_bd'];
 
-    $bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;charset=utf8', 'mmi19x04', 'rochdi2002D@');
+    $bdd = new PDO('mysql:host=localhost;dbname=NAME;charset=utf8', 'NAME', 'PASSWORD');
 
     $req='SELECT * FROM auteurs  WHERE auteur_id='.$num_bd;
 

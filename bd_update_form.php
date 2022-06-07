@@ -31,7 +31,7 @@
 
     $num_bd = $_GET['num_bd'];
 
-    $bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;charset=utf8', 'mmi19x04', 'rochdi2002D@');
+    $bdd = new PDO('mysql:host=localhost;dbname=NAME;charset=utf8', 'NAME', 'PASSWORD');
 
     $req='SELECT * FROM albums INNER JOIN auteurs ON albums._auteur_id_ = auteurs.auteur_id INNER JOIN editeurs ON editeurs.editeur_id = editeurs.editeur_id  WHERE album_id='.$num_bd;
 
@@ -64,7 +64,7 @@
         <select name="auteur">
             <option value="<?php echo $album['auteur_id']?>">** <?php echo $album['auteur_nom']?> **</option>
             <?php 
-            $bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;charset=utf8', 'mmi19x04', 'rochdi2002D@');
+            $bdd = new PDO('mysql:host=localhost;dbname=NAME;charset=utf8', 'NAME', 'rochdi2002D@');
             $req2='SELECT * FROM auteurs';
             $resultat2 = $bdd->query($req2);
 

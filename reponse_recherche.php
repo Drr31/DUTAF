@@ -30,8 +30,8 @@
         <h1> Résultat de recherche</h1>
     <tr><td> <u> Titre de l'album </u></td><td> <u>prix </u></td><td> <u>Auteur </u></td></tr>
     <?php
-$bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;
-charset=utf8', 'mmi19x04', 'rochdi2002D@');
+$bdd = new PDO('mysql:host=localhost;dbname=NAME;
+charset=utf8', 'NAME', 'PASSWORD');
 
 $texte= $_GET['texte'] ;
 $requete = 'SELECT album_titre,album_prix,auteur_nom,auteur_prenom 

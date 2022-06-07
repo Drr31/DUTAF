@@ -37,7 +37,7 @@
         Editeur:
         <select name="editeur">
                     <?php 
-            $bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;charset=utf8', 'mmi19x04', 'rochdi2002D@');
+            $bdd = new PDO('mysql:host=localhost;dbname=NAME;charset=utf8', 'NAME', 'PASSWORD');
             $req1='SELECT * FROM editeurs';
             $resultat1 = $bdd->query($req1);
 
@@ -51,7 +51,7 @@
         Auteur:
         <select name="auteur">
             <?php 
-            $bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;charset=utf8', 'mmi19x04', 'rochdi2002D@');
+            $bdd = new PDO('mysql:host=localhost;dbname=NAME;charset=utf8', 'NAME', 'PASSWORD');
             $req2='SELECT * FROM auteurs';
             $resultat2 = $bdd->query($req2);
 

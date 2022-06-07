@@ -29,13 +29,12 @@
     <h2>Vous venez de modifier un auteur</h2>
     <hr>
     <?php
-    $bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;charset=utf8', 'mmi19x04', 'rochdi2002D@');
+    $bdd = new PDO('mysql:host=localhost;dbname=NAME;charset=utf8', 'NAME', 'PASSWORD');
     $num_bd=$_GET['num_bd'];
     $nom=$_GET['nom'];
     $prenom=$_GET['prenom'];
     $nationalite=$_GET['nationalite'];
     $age=$_GET['age'];
-    
     $req="UPDATE auteurs SET auteur_nom='$nom' , auteur_prenom='$prenom' , auteur_nat='$nationalite' ,auteur_age='$age' WHERE auteur_id=$num_bd ";
     
     echo"<hr> debug : ".$req."</hr>"; 

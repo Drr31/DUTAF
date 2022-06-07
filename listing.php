@@ -22,8 +22,8 @@
 
     <tbody>
     <?php
-$bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;
-charset=utf8', 'mmi19x04', 'rochdi2002D@');
+$bdd = new PDO('mysql:host=localhost;dbname=NameDB;
+charset=utf8', 'NameDB', 'PASSWORD);
 
 $requete = 'SELECT album_titre,album_prix,auteur_nom 
 FROM albums 

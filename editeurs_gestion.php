@@ -40,8 +40,8 @@
 
     <tbody>
     <?php
-$bdd = new PDO('mysql:host=localhost;dbname=mmi19x04;
-charset=utf8', 'mmi19x04', 'rochdi2002D@');
+$bdd = new PDO('mysql:host=localhost;dbname=NAME;
+charset=utf8', 'NAME', 'PASSWORD');
 
 $requete = 'SELECT editeur_id,editeur_nom,editeur_pays,editeur_tel 
 FROM editeurs';  
