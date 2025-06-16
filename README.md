@@ -29,8 +29,7 @@ Ce site permet à l’utilisateur de :
 
 ## 📁 Structure du projet
 
-
-## 📁 Arborescence
+```
 DUTAF-SHOP/
 ├── index.php # Page d’accueil
 ├── catalogue.php # Affichage des BD
@@ -43,6 +42,7 @@ DUTAF-SHOP/
 │ └── style.css
 └── sql/
 └── bd_vente.sql # Script de création de la base
+```
 
 
 
