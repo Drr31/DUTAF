@@ -31,6 +31,7 @@ Ce site permet à l’utilisateur de :
 
 
 ## 📁 Arborescence
+```
 DUTAF-SHOP/
 ├── index.php # Page d’accueil
 ├── catalogue.php # Affichage des BD
@@ -44,7 +45,7 @@ DUTAF-SHOP/
 └── sql/
 └── bd_vente.sql # Script de création de la base
 
-
+```
 
 ## 🔐 Sécurité
 
